@@ -1,0 +1,577 @@
+/*页面reset操作*/
+:root {
+	font-size: 10px;
+	scroll-behavior: smooth;
+	font-family: STKaiti, "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+input {
+    padding: 0px 0px;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+ul {
+	list-style: none;
+	margin: 0;
+}
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+/*******************************header开始************************/
+/*PC端页面容器*/
+.container {
+	width: 1000px;
+	margin: 0 auto;
+}
+/*PC、ipad端loading动画*/
+#loading {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background-color: #c8d6e5;
+	z-index: 21;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 0;
+}
+/*loading动画盒子*/
+#loadingBox {
+	width: 110px;
+	height: 100px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-end;
+}
+
+/*loading动画文字*/
+#loadingText {
+	width: 110px;
+	height: 30px;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: 10px;
+	color: #fff;
+}
+.item {
+	width: 20px;
+	border-radius: 2px;
+	background-color: #48dbfb;
+}
+#itemOne {
+	animation: loadingOne 1.5s infinite linear;
+}
+#itemTwo {
+	animation: loadingTwo 1.5s infinite linear;
+}
+#itemThree {
+	animation: loadingThree 1.5s infinite linear;
+}
+#itemFour {
+	animation: loadingFour 1.5s infinite linear;
+}
+@keyframes loadingOne {
+	0% {
+		height: 20px;
+	}
+	25% {
+		height: 35px;
+	}
+	50% {
+		height: 50px;
+	}
+	75% {
+		height: 35px;
+	}
+	100% {
+		height: 20px;
+	}
+}
+@keyframes loadingTwo {
+	0% {
+		height: 35px;
+	}
+	25% {
+		height: 50px;
+	}
+	50% {
+		height: 35px;
+	}
+	75% {
+		height: 20px;
+	}
+	100% {
+		height: 35px;
+	}
+}
+@keyframes loadingThree {
+	0% {
+		height: 50px;
+	}
+	25% {
+		height: 35px;
+	}
+	50% {
+		height: 20px;
+	}
+	75% {
+		height: 35px;
+	}
+	100% {
+		height: 50px;
+	}
+}
+@keyframes loadingFour {
+	0% {
+		height: 35px;
+	}
+	25% {
+		height: 20px;
+	}
+	50% {
+		height: 35px;
+	}
+	75% {
+		height: 50px;
+	}
+	100% {
+		height: 35px;
+	}
+}
+/*PC端页面头部*/
+header {
+	width: 100vw;
+	height: 60px;
+	background-color: #00d2d3;
+	position: fixed;
+	z-index: 20;
+	box-shadow: 0 5px 5px rgb(0, 0, 0, 0.2);
+}
+header .container {
+	display: flex;
+	justify-content: space-between;
+}
+header .logo {
+	width: 250px;
+	height: 60px;
+	display: flex;
+}
+header .logo img {
+	width: 60px;
+	display: inline-block;
+}
+header .logo #headerTitle {
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	line-height: 50px;
+	font-size: 1.6rem;
+	text-align: center;
+}
+header .logo #clickBtn {
+	display: none;
+	width: 50px;
+	height: 60px;
+	color: white;
+	line-height: 50px;
+	text-align: center;
+}
+header nav ul{
+	display: flex;
+	align-items: flex-start;
+}
+header nav .navList {
+	width: 100px;
+	height: 60px;
+	text-align: center;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+header nav .navListText {
+	width: 120px;
+	height: 30px;
+	margin-top: 10px;
+	line-height: 30px;
+}
+header nav .navListLine {
+	width: 0;
+	height: 3px;
+	background-color: #fff;
+	margin: 0 auto;
+	transition-duration: .6s;
+}
+header nav .navListText:hover +div {
+	width: 50px;
+}
+header nav .sep {
+	width: 3px;
+	height: 12px;
+	background-color: #fff;
+	margin-top: 19px;
+}
+header .blank {
+	width: 60px;
+	height: 60px;
+}
+/*自适应页面banner*/
+.banner img {
+	display: block;
+	width: 100%;
+}
+.banner #banner {
+	height: 60px;
+	width: 100%;
+}
+/*关于科协*/
+#about {
+	width: 100%;
+	height: 50px;
+	margin-top: -50px;
+}
+#introduction {
+	width: 100%;
+	height: 50px;
+	margin-top: -50px;
+}
+#activity {
+	width: 100%;
+	height: 50px;
+	margin-top: -50px;
+}
+
+.contentTitle {
+	display: flex;
+}
+.upItemBox {
+	width: 80px;
+	margin-left: 20px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.upItem {
+	width: 6px;
+	height: 12px;
+	margin-top: 25px;
+}
+#upItemOne {
+	background-color: #FEA47F;
+	animation: upOne 2.5s infinite linear;
+}
+#upItemTwo {
+	background-color: #55E6C1;
+	animation: upTwo 2.5s infinite linear;
+}
+#upItemThree {
+	background-color: #FD7272;
+	animation: upThree 2.5s infinite linear;
+}
+#upItemFour {
+	background-color: #D6A2E8;
+	animation: upFour 2.5s infinite linear;
+}
+#upItemFive {
+	background-color: #25CCF7;
+	animation: upFive 2.5s infinite linear;
+}
+@keyframes upOne {
+	0% {
+		margin-top: 22px;
+	}
+	20% {
+		margin-top: 25px;
+	}
+}
+@keyframes upTwo {
+	20% {
+		margin-top: 22px;
+	}
+	40% {
+		margin-top: 25px;
+	}
+}
+@keyframes upThree {
+	40% {
+		margin-top: 22px;
+	}
+	60% {
+		margin-top: 25px;
+	}
+}
+@keyframes upFour {
+	60% {
+		margin-top: 22px;
+	}
+	80% {
+		margin-top: 25px;
+	}
+}
+@keyframes upFive {
+	80% {
+		margin-top: 22px;
+	}
+	100% {
+		margin-top: 25px;
+	}
+}
+h2 {
+	padding-left: 2%;
+	font-size: 2rem;
+	color: #8395a7;
+}
+h3 {
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2.5rem;
+	color: black;
+}
+.introductionItemOdd h3 ，.introductionItemEven h3{
+	width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2.5rem;
+	color: white;
+}
+p {
+	padding: 0 3%;
+	font-size: 2rem;
+	text-indent: 2em;/*首行缩进2各*/
+}
+.underline {
+	width: 96%;
+	height: 3px;
+	margin: 10px auto;
+	background-color: #c8d6e5;
+}
+.aboutMain {
+	width: 96%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+.aboutItem {
+    width: 30%;
+}
+.aboutContent {
+	margin-top: 10px;
+	border: 1px solid hsl(202, 49%, 35%);
+	border-radius: 5px;
+}
+/********************************部门介绍结束****************************/
+/********************************竞赛风采开始****************************/
+.introductionItemOdd, .introductionItemEven {
+	width: 100%;
+	display: flex;
+	margin-top: 30px;
+}
+.introductionItemOdd .introductionContent {
+	margin-left: 2%;
+}
+.introductionItemEven .introductionContent {
+	margin-right: 2%;
+}
+.introductionHeader {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.introductionHeader h3 {
+	padding: 10px;
+	font-size: 2rem;
+}
+#infoOne {
+	background: #FEA47F;
+	border: 1px solid #FEA47F;
+	border-radius: 43x;
+}
+#infoTwo {
+	background: #55E6C1;
+	border: 1px solid #55E6C1;
+	border-radius: 4px;
+}
+#infoThree {
+	background: #FD7272;
+	border: 1px solid #FD7272;
+	border-radius: 4px;
+}
+.introductionHeader .textLine {
+	margin-top: 20px;
+	width: 200px;
+	height: 5px;
+	background-color: #2f3542;
+}
+.introduction img {
+	display: block;
+	width: 60%;
+	border-radius: 10px;
+    box-shadow: 4px 10px rgba(36, 37, 38, 0.06);
+    -webkit-animation: scale-down-center 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s infinite  ;
+	        animation: scale-down-center 10s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s infinite ;
+}
+/* 这边没搞懂 学会了记得来解释 
+.introduction img:hover {
+	box-shadow: 5px 8px 10px rgba(36, 37, 38, 0.13);
+	transform: translate(0%, -4px);
+	transition: box-shadow 0.25s ease-out, transform 0.25s ease-out, -webkit-box-shadow 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+*/
+/*********************************css动画************************/
+@-webkit-keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+  }
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+  }
+  /************************************登录框***************************/
+  #login {
+	width: 100%;
+	height: 50px;
+	margin-top: -50px;
+}
+.login .logincontent{
+     border-radius: 8px;
+    box-shadow: 0px 0px 15px 0px #1f2430;
+    background-image: linear-gradient(to left,#4d648a,#1c365a); 
+}
+.login img{
+      width: 60%;
+      border-radius: 8px 0px 0px 8px;
+  }
+.login .login-wrapper{
+    float:right;
+    width: 40%;
+    border-radius: 0px 8px 8px 0px;
+}
+.login-wrapper .loginheader{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+}
+.login-wrapper .form-wrapper .input-item1{
+    display: block;
+    width: 98%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+	border-radius: 8px;
+	box-shadow: 0px 0px 12px 0px #1f2430;
+	background-color: #fff;
+}
+.login-wrapper .form-wrapper .input-item2{
+    display: block;
+    width: 98%;
+    height: 50px;
+    margin-bottom: 5px;
+    font-size: 1.7rem;
+    border-radius: 8px;
+	box-shadow: 0px 0px 12px 0px #1f2430;
+	background-color: #fff;
+}
+.login-wrapper .form-wrapper .btn{
+    text-align: center;
+    width: 100%;
+}
+.btn input{
+    color: #fff; 
+    background-color: #354b70;
+    font-size: 2.5rem;
+    border-radius: 20px;
+ }
+.btn input:hover{
+    opacity: 0.5;
+}
+.login-wrapper .msg{
+    text-align: center;
+}
+
+.login-wrapper .msg a{
+    text-decoration: none;
+    color:#a6c1ee;
+    font-size: 22px;
+}
+ #zhuce{
+    line-height: 30px;
+}
+ #xiugai{
+    line-height: 30px;
+}
+.login-wrapper .msg a:hover{
+   opacity:0.5;
+}
+.login-wrapper .radio{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+.login-wrapper .radio input{
+    margin: 0px 20px;
+}
+.login .blank{
+    clear: both;
+} /*****************************清除浮动**********************/
+/*******************************公示栏***********************/
+.news span{
+    color: #333;
+    font: 16px Helvetica;
+    margin: 5px 0px 0px 20px;
+}
+.news .xinxi{
+    margin-left: -20px;
+}
+.news .xinxi li{
+  margin-top: 5px 0px;
+}
+.xinxi .date{
+    color: #999;
+    font: 13px Helvetica;
+    margin: 0px 0px 5px 0px;
+}
+.xinxi  a{
+    color:#666;
+    font: 16px Helvetica;
+    margin:5px 0px;
+}
+.xinxi  a:hover{
+  opacity: 0.5;   
+}
+/*页面底部*/
+footer {
+	margin-top: 10px;
+	height: 50px;
+	background-color: #222f3e;
+}
+footer p {
+	margin: 0;
+	height: 25px;
+	line-height: 25px;
+	font-size: 1.3rem;
+	color: #fff;
+	text-align: center;
+}

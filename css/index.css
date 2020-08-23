@@ -1,0 +1,8 @@
+@import url(common.css) screen;
+@import url(medium.css) screen and (max-width: 1024px);
+@import url(small1.css) screen and (max-width: 768px);
+@import url(small2.css) screen and (max-width: 648px);
+@import url(small3.css) screen and (max-width: 568px);
+@import url(supsmall1.css) screen and (max-width: 460px);
+@import url(supsmall2.css) screen and (max-width: 416px);
+@import url(supsmall3.css) screen and (max-width: 388px);

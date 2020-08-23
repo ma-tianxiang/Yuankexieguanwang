@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <!-- #以上代码IE=edge告诉IE使用最新的引擎渲染网页，chrome=1则可以激活Chrome Frame. -->
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.lazyload.js"></script>
+    <script src="js/iconfont.js"></script>
+    <script src="js/index.js"></script>
+    <title>EOAST</title>
+</head>
+<body>
+    <!-- loading动画 -->
+    <div id="loading">
+		<div id="loadingBox">
+			<span class="item" id="itemOne"></span>
+			<span class="item" id="itemTwo"></span>
+			<span class="item" id="itemThree"></span>
+			<span class="item" id="itemFour"></span>
+		</div>
+		<div id="loadingText">
+		      欢迎来到科协
+		</div>
+	</div> 
+    <!-- 页面头部 -->
+    <header>
+		<div class="container">
+			<div class="logo">
+				<a href="#banner" id="logo">
+					<img src="images/logo.png" title="点击回到顶部" />	
+				</a>
+				<a href="#banner" id="headerTitle">电光微院科协</a>
+				<div id="clickBtn">
+					<svg class="icon icon-task" aria-hidden="true">
+					  <use xlink:href="#icon-task"></use>
+					</svg>
+                </div>
+            </div>
+            <nav>
+				<div id="headerList">
+					<ul id="navUl">
+						<li class="navList">
+							<div class="navListText">
+								<a href="#about">关于科协</a>
+							</div>
+							<div class="navListLine"></div>
+						</li>
+						<li class="sep"></li>
+						<li class="navList">
+							<div class="navListText">
+								<a href="#introduction">科协风采</a>
+							</div>
+							<div class="navListLine"></div>
+						</li>
+						<li class="sep"></li>
+						<li class="navList">
+							<div class="navListText">
+								<a href="#login">部员登陆</a>
+							</div>
+							<div class="navListLine"></div>
+						</li>
+						<li class="sep"></li>
+						<li class="navList" >
+							<div class="navListText">
+								<a href="#news">公告栏</a>
+							</div>
+							<div class="navListLine"></div>
+						</li>
+                        <li class="sep"></li>
+						<li class="navList" id="lastList">
+							<div class="navListText">
+								<a href="#">欢迎报名</a>
+							</div>
+							<div class="navListLine"></div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="blank"></div>
+		</div>
+    </header>
+    <!-- 页面轮播图 -->
+	<div class="banner">
+        <div id="banner"></div>
+        <!--当header开启固定定位时 它会开启浮动 这里空div设置为header高度解决高度塌陷问题-->
+        <img src="images/banner.png" alt="这里是banner图片" id="bannerPic">
+    </div>
+    <!-- 关于科协 -->
+	<div class="about">
+		<div class="container">
+			<div id="about"></div>
+			<div class="contentTitle">
+				<h2>
+					<svg class="icon" aria-hidden="true">
+				  	<use xlink:href="#icon-untitled85"></use>
+					</svg>关于科协
+				</h2>
+				<div class="upItemBox">
+					<span class="upItem" id="upItemOne"></span>
+					<span class="upItem" id="upItemTwo"></span>
+					<span class="upItem" id="upItemThree"></span>
+					<span class="upItem" id="upItemFour"></span>
+					<span class="upItem" id="upItemFive"></span>
+				</div>
+			</div>
+			<div class="underline"></div>
+			<div class="aboutMain">
+				<div class="aboutItem">
+					<div class="aboutHeader">
+						<h3>电子部</h3>
+					</div>
+					<div class="aboutContent">
+						<p>电子部负责单片机以及微控制器、电路、仿真等相关授课工作，同时举办科技活动、讲座、竞赛以服务于大学生，竭力为学院输送技术型人才。
+                            </br>
+                            部门职能:
+                            <br>
+                            1.进行51单片机、STM32微控制器等硬件编程的授课，模拟电路以及数字逻辑电路的设计与制作，仿真软件的教学。
+                            2.为科协举办的科技活动、讲座、竞赛等提供技术支持，是培育我院科创氛围的核心力量，是院科协的龙头活动部门。
+                        </p>
+					</div>
+				</div>
+				<div class="aboutItem">
+					<div class="meetHeader">
+						<h3>计算机部</h3>
+					</div>
+					<div class="aboutContent">
+						<p>计算机部承担对于软件相关能力技术的培养任务，主要侧重于WEB技术、软件使用及开发等方面。部门算法组,后端组经验丰富，多会负责竞赛。
+                            <br>
+                          部门职能：
+                            <br>
+                          1.对计算机部或科协成员集中授课计算机语言，培养成员的编程能力。2.负责电光微院科协相关网站制作、维护与完善。3.根据授课内外所学知识，组织部门成员参加相应比赛，并组织学术交流。4.培养技术强人，尝试构建大型项目。
+                        </p>
+					</div>
+				</div>
+				<div class="aboutItem">
+					<div class="meetHeader">
+						<h3>多媒体办公室部</h3>
+					</div>
+					<div class="aboutContent">
+						<p>多媒体办公室部是电光微院院科协对外宣传的窗口，也是院科协内部管理和对外联系的枢纽。负责科协的日常管理、策划科协的各类活动。
+                            <br>
+                        部门职能：
+                           <br>
+                        1.负责低昂微院科协活动海报、宣传视频的制作，活动照片的拍摄，并及时上传到网盘做好留档工作。2.负责微信公众号和QQ号等新媒体平台的正常运营，及时更新科协活动及科创信息。3.进行PS、AE、PR等多媒体后期处理软件的培训。
+                        </p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- 科协风采 -->
+    <div class="introduction">
+		<div class="container">
+			<div id="introduction"></div>
+			<div class="contentTitle">
+				<h2>
+					<svg class="icon" aria-hidden="true">
+				  	<use xlink:href="#icon-icon-test2"></use>
+					</svg>科协风采
+				</h2>
+				<div class="upItemBox">
+					<span class="upItem" id="upItemOne"></span>
+					<span class="upItem" id="upItemTwo"></span>
+					<span class="upItem" id="upItemThree"></span>
+					<span class="upItem" id="upItemFour"></span>
+					<span class="upItem" id="upItemFive"></span>
+				</div>
+            </div>
+            <div class="underline"></div>
+			<div class="introductionItemOdd">
+				<div class="introductionHeader">
+					<h3 id="infoOne">电子设计大赛“芯火相传”</h3>
+					<div class="textLine"></div>
+					<p>为了培养同学们对科技的兴趣、丰富同学们的生活，2019年11月23日晚，电子与光学工程学院、微电子学院科学技术协会在教三316开展了第八届“芯火相传”传感器电子设计大赛初级组的评审活动。
+                        本次评审活动的嘉宾有：电光微院科协现任主席张子扬学长、电子部分管主席王东宇和王振学长，以及院科协上届主席王涵申学长。
+                    </p>
+				</div>
+				<img src="images/1.jpeg">
+			</div>
+			<div class="underline"></div>
+			<div class="introductionItemEven">
+				<img src="images/2.jpeg">
+				<div class="introductionHeader">
+					<h3 id="infoTwo">LED灯饰大赛“芯芯点灯”</h3>
+					<div class="textLine"></div>
+					<p>
+                        为了营造浓厚的校园学术科技氛围，2019年11月24日18:05，电子与光学工程学院、微电子学院科学技术协会于教4-302举办第二十四届科技节之“芯芯点灯”LED灯饰设计大赛初级组评审活动。
+                        受邀出席本次评审活动的评委有电光微院科协上届主席王涵申学长，现任主席张子扬学长，电子部分管主席王东宇学长、王振学长，多媒体办公中心分管主席王聪学姐。
+                    </p>
+				</div>
+			</div>
+			<div class="underline"></div>
+			<div class="introductionItemOdd">
+				<div class="introductionHeader">
+					<h3 id="infoThree">脑洞算法大赛“Art of Algorithm"</h3>
+					<div class="textLine"></div>
+					<p>进一步营造浓厚的校园学术科技氛围，促进我校学生课外学术科技活动的普及和深化，培养和提高我校学生创新能力和综合素质。本次比赛采用竞赛机制，旨在营造浓厚的校园科技实践氛围，丰富学生的课余生活，为我校发现并培养科技创新人才提供服务与参考，最终引导他们走上科技创新的道路。</p>
+				</div>
+				<img src="images/3.jpeg">
+			</div>
+        </div>
+        </div>
+     <!-- 登录框 -->
+        <div class="login">
+            <div class="container">
+                <div id="login"></div>
+                <div class="contentTitle">
+                    <h2>
+                        <svg class="icon" aria-hidden="true">
+                          <use xlink:href="#icon-jiaru"></use>
+                        </svg>部员登陆
+                    </h2>
+                    <div class="upItemBox">
+                        <span class="upItem" id="upItemOne"></span>
+                        <span class="upItem" id="upItemTwo"></span>
+                        <span class="upItem" id="upItemThree"></span>
+                        <span class="upItem" id="upItemFour"></span>
+                        <span class="upItem" id="upItemFive"></span>
+                    </div>
+                </div>
+                <div class="underline"></div>
+                <div class="logincontent">
+                    <img src="images/loginimg.jpg" alt="login">
+                <div class="login-wrapper">
+                    <div class="loginheader">
+                     login
+                    </div>
+                    <div class="form-wrapper">
+                       <input type="text"  name="username"  placeholder="username" class="input-item1">
+                       <input type="password"  name="password" placeholder="password" class="input-item2">
+                      <div class="btn">
+                        <input type="submit" value="login">
+                       </div>
+                   </div>
+                   <div class="msg">
+                      <div><a href="#" id="zhuce" > Don't have account? Sign up</a></div>
+                      <a href="#" id="xiugai"> Forgrt your accunt? Click here</a></span>
+                </div>
+                <div class="radio">
+                     管理员<input type="radio" name="choose one">
+                     中干 <input type="radio" name="choose one">
+                     部员 <input type="radio" name="choose one">
+                </div>
+                <div class="blank"></div>
+           </div>
+        </div>
+      </div>
+     </div>
+    <!-- 公示栏 -->
+    <div class="news">
+		<div class="container">
+			<div id="news"></div>
+			<div class="contentTitle">
+				<h2>
+					<svg class="icon" aria-hidden="true">
+				  	<use xlink:href="#icon-weibo"></use>
+					</svg>公告栏
+				</h2>
+				<div class="upItemBox">
+					<span class="upItem" id="upItemOne"></span>
+					<span class="upItem" id="upItemTwo"></span>
+					<span class="upItem" id="upItemThree"></span>
+					<span class="upItem" id="upItemFour"></span>
+					<span class="upItem" id="upItemFive"></span>
+				</div>
+			</div>
+            <div class="underline"></div>
+            <span>最新消息</span>
+       <div class="wrap">
+           <ul class="xinxi">
+               <li>
+                   <div class="date">2020.9.30</div>
+                   <a href="" target="blank">电子部招新准则及安排</a>
+               </li>
+               <li>
+                   <div class="date">2020.9.30</div>
+                   <a href="" target="blank">计算机部招新准则及安排</a>
+              </li>
+              <li>
+                   <div class="date">2020.9.30</div>
+                  <a href="" target="blank">多媒体办公室部招新准则及安排</a>
+              </li>
+           </ul>
+        </div>
+    </div>
+    </div>
+        <!-- 页面底部 -->
+        <footer>
+            <div class="container">
+                <p>Copyright&nbsp;&copy; 2020 南邮电光微院科协 All rights reserved</p>
+                <p>页面设计作者博客：https://ma-tianxiang.github.io</p>
+            </div>
+        </footer>
+</body>
+</html>
