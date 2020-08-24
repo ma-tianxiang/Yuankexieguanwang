@@ -195,10 +195,10 @@ header nav .navList {
 	height: 60px;
 	text-align: center;
 	font-size: 1.6rem;
-	cursor: pointer;
+	cursor: pointer;/*光标变为小手*/
 }
 header nav .navListText {
-	width: 120px;
+	width: 100px;
 	height: 30px;
 	margin-top: 10px;
 	line-height: 30px;
@@ -502,7 +502,7 @@ p {
     color: #fff; 
     background-color: #354b70;
     font-size: 2.5rem;
-    border-radius: 20px;
+	border-radius: 20px;
  }
 .btn input:hover{
     opacity: 0.5;
